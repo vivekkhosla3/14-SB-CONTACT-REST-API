@@ -31,8 +31,9 @@ public class ContactService {
 		
 				
 		//return contactRepository.findAll(Example.of(contact));
+		List<Contact> sw = contactRepository.findByActiveSw("Y");
 
-		return contactRepository.findAll();
+		return sw;
 		/*
 		 * System.out.println("g wala test"); return (List<Contact>)
 		 * contactRepository.findAll();
