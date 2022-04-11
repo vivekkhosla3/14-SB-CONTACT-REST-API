@@ -28,8 +28,11 @@ public class ContactService {
 		 */
 		Contact contact = new Contact();
 		contact.setactiveSw("Y");
+		
+				
+		//return contactRepository.findAll(Example.of(contact));
 
-		return contactRepository.findAll(Example.of(contact));
+		return contactRepository.findAll();
 		/*
 		 * System.out.println("g wala test"); return (List<Contact>)
 		 * contactRepository.findAll();
