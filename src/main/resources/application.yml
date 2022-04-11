@@ -2,16 +2,10 @@ server:
   port: 9090
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    password: krishna123
-    url: jdbc:mysql://localhost:3306/contact
-    username: root
-  jpa:
-    hibernate:
-      ddl-auto: create
-  sql:
-    init:
-      platform: =mysql
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
 
 
 app: 
